@@ -1,4 +1,5 @@
 DROP TABLE IF EXISTS bike;
+DROP TABLE IF EXISTS hibernate_sequence;
 
 CREATE TABLE bike(
          id INTEGER NOT NULL,
@@ -18,3 +19,10 @@ INSERT INTO bike (id, contact, email, model, name, phone, purchase_date, purchas
   VALUES (2, 0, 'samantha@bikes.com', 'Globo Carbon Fiber Race Series', 'Samantha Davis', '448-397-5555', '2018-04-11' , '1999');
 INSERT INTO bike (id, contact, email, model, name, phone, purchase_date, purchase_price)
   VALUES (3, 1, 'dave@bikes.com', 'Globo Time Trial Blade', 'Dave Warren', '563-891-5555', '2018-04-11' , '2100');
+  
+  CREATE TABLE hibernate_sequence(
+next_val BIGINT
+);
+
+
+INSERT INTO hibernate_sequence(next_val) values(4);
